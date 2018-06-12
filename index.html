@@ -24,7 +24,7 @@
     provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
     firebase.auth().languageCode = 'en';
     provider.setCustomParameters({
-        'login_hint': 'evaldas@taroza.lt'
+        'login_hint': ''
     });
     function click() {
         firebase.auth().signInWithPopup(provider).then(function(result) {
